@@ -1,0 +1,121 @@
+/* Global styles for LMS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home-page {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.login-page, .register-page {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.profile-page {
+    background: linear-gradient(135deg, #76b852, #8dc26f);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.search-page {
+    background: linear-gradient(135deg, #e0e0e0, #b0bec5);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.admin-page {
+    background: linear-gradient(135deg, #7b1fa2, #ab47bc);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .content-card {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-card {
+        max-width: 1000px;
+    }
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar .nav-link, .navbar-brand {
+    color: white !important;
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.alert {
+    max-width: 800px;
+    margin: auto;
+}
+
+.login-page .form-select {
+    background-color: #f8f9fa;
+    border: 1px solid #5b86e5;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b86e5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+.login-page .form-select:focus {
+    border-color: #36d1dc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(54, 209, 220, 0.5);
+    background-color: #fff;
+}
+
+.login-page .form-select:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.login-page .form-select option {
+    background-color: #fff;
+    color: #333;
+}
+
+@media (max-width: 576px) {
+    .login-page .form-select {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.9rem;
+    }
+}
